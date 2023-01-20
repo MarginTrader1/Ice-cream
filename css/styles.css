@@ -120,10 +120,6 @@ img {
     background-image: url(../images/backgroud_desktop.jpg); 
     background-size: cover;
     background-position: center;
-    
-}
-
-.reviews-list {
 }
 
 .review-item {
@@ -133,27 +129,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.review-photo {
-    margin-bottom: 140px ;
-
-    max-width: 1013px;
-    height: 422px;
-    border-radius: 24px;
+    gap: 32px;
 }
 
 .customer-photo {
-    margin-bottom: 32px;
-
     width: 85px;
     height: 85px;
     border-radius: 50%;
 }
 
 .customer-review-text {
-    margin-bottom: 32px;
-
     max-width: 968px;
 
     padding: 43px 73px;
@@ -175,7 +160,6 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.88;
-
 
     text-align: center;
 
