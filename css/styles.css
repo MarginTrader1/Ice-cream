@@ -13,6 +13,7 @@
 /* ============================== body styles ============================== */
 
 body {
+    
     background-color: var(--main-background-color);
     
     font-family: 'Montserrat', sans-serif;
@@ -21,8 +22,12 @@ body {
     color: var(--main-text-color);
 }
 
-li {
+ul, li {
     list-style-type: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 
 
@@ -44,12 +49,160 @@ li {
 }
 
 img {
+    
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* ============================== Rewievs styles ============================== */
+/* ============================== PRODUCTS styles ============================== */
+
+.products {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    
+    display: block;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: var(--main-background-color);
+    background-image: url(../images/backgroud_desktop.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+.products-title {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 350px;
+    
+    margin-bottom: 300px;
+    color: var(--secondary-text-color);
+    
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2333;
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products-title > span {
+
+    font-family: 'Seymour One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2333;
+    letter-spacing: 0.06em; 
+}
+
+.products-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+
+}
+
+.product-item {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+.product-card {
+    padding-top: 165px;
+    padding-bottom: 60px;
+    padding-left: 64px;
+    padding-right: 64px;
+    
+    max-width: 370px;
+    min-height: 536px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.item-ice-cream {
+    background-color: #AEC6A5;
+}
+
+.item-coffee {
+    background-color: #EFD478;
+}
+
+.item-milkshake {
+    background-color: #D6936D;
+}
+
+.product-photo-position {
+    position: absolute;
+    top: -150px;
+    left: 35px;
+
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.item-ice-cream-position {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+}
+
+.item-coffee-position {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+
+.item-milkshake-position {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.product-item-photo {
+    margin: 0;
+    border-radius: 50%;
+
+    transform: translateY(-16px);
+}
+
+
+.product-item-title {
+    color: var(--secondary-text-color);
+
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2333;
+    letter-spacing: 0.04em;
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+    margin-bottom: 66px;
+
+}
+
+.product-item-text {
+
+    color: var(--secondary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+        
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+
+/* ============================== REVIEWS styles ============================== */
 
 /* ++++++++++ Стили слайдера ++++++++++ */
 
@@ -216,3 +369,5 @@ img {
 
     color: var(--secondary-text-color);
 }
+
+
