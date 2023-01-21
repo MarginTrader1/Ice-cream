@@ -1,10 +1,29 @@
 /* ============================== root styles ============================== */
 
 :root {
+    --main-backgground-color: #84A178;
+    --main-text-color: #FCFCFC;
+    --secondary-text-color: #131313;
+    --timeschedule-text-color: #ABABAB;
 
+    --timing-animation: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
- 
+
 /* ============================== body styles ============================== */
+
+body {
+    background-color: var(--main-background-color);
+    
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Seymour One', sans-serif; */
+
+    color: var(--main-text-color);
+}
+
+li {
+    list-style-type: none;
+}
 
 
 .container {  
@@ -137,7 +156,7 @@ img {
 /* Элемент точки */
 .slick-dots li button {}
 
-/* ++++++++++ Стили для контента в слайдах ++++++++++ */
+/* ++++++++++++++++++++ Стили для контента в слайдах ++++++++++++++++++++ */
 
 .reviews {
     display: block;
@@ -166,11 +185,13 @@ img {
 }
 
 .customer-review-text {
+    margin: 0;
+
     max-width: 968px;
 
     padding: 43px 73px;
 
-    background: #84A178;
+    background: var(--main-backgground-color);
     border-radius: 24px;
 
     font-weight: 500;
@@ -180,7 +201,7 @@ img {
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #FCFCFC;
+    color: var(--main-text-color);
 }
 
 .customer-name {
@@ -193,5 +214,5 @@ img {
 
     text-align: center;
 
-    color: #131313;
+    color: var(--secondary-text-color);
 }
